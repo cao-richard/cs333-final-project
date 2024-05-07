@@ -14,12 +14,12 @@ class ResumeParser:
         result, self.text = parser.convert()
         return result
     
-    def getSkills(self):
+    def getName(self):
         extractor = extractDetails(self.text)
         result, self.name = extractor.getName()
         return result
     
-    def getName(self):
+    def getSkills(self):
         extractor = extractDetails(self.text)
         result, self.skills = extractor.getSkills()
         return result
