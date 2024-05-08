@@ -48,17 +48,24 @@ class TestResumeParser(unittest.TestCase):
         self.assertTrue(result)
     
     def test_getName(self):
+        result1 = self.resumeParser.convertPDF()
         result = self.resumeParser.getName()
         self.assertTrue(result)
         
     def test_getEmail(self):
+        result1 = self.resumeParser.convertPDF()
         result = self.resumeParser.getEmail()
         self.assertTrue(result)
         
     def test_getSKills(self):
+        result1 = self.resumeParser.convertPDF()
         result = self.resumeParser.getSkills()
         self.assertTrue(result)
         
     def test_getEducation(self):
+        result1 = self.resumeParser.convertPDF()
         result = self.resumeParser.getEducation()
         self.assertTrue(result)
+        
+if __name__ == '__main__':
+    unittest.main()
