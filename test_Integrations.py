@@ -22,7 +22,7 @@ class integrationTestResumeParser(unittest.TestCase):
         resumeParser = ResumeParser('Computer_Science_Resume_John_Doe.pdf')
         resumeParser.convertPDF()
         result = resumeParser.getName()
-        self.assertGreater(resumeParser.name, 0)
+        self.assertGreater(len(resumeParser.name), 0)
         self.assertTrue(result)
     
     #Check if there is an email and stores it into resumeParser class
