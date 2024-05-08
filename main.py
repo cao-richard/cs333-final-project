@@ -1,7 +1,7 @@
 from resumeParser import ResumeParser
 
 def main():
-    resumeParser = ResumeParser('Amin_Roohan_Resume.pdf')
+    resumeParser = ResumeParser('Computer_Science_Resume_John_Doe.pdf')
     print(resumeParser.convertPDF())
     print(resumeParser.getName())
     print(resumeParser.getSkills())
