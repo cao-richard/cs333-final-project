@@ -1,7 +1,7 @@
 from resumeParser import ResumeParser
 
 def main():
-    path = input('Path to your resume in a PDF format')
+    path = input('Path to your resume in a PDF format ')
     resumeParser = ResumeParser(path)
     resumeParser.convertPDF()
     resumeParser.getName()
